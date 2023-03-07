@@ -48,4 +48,4 @@ modules:
     sources:
       - type: archive
         url: https://github.com/dgsasha/remembrance/archive/refs/tags/v1.1.tar.gz
-        sha256: 82061cfa9a6b13db72f1b20ae6ee909c572418400dbfe27f6d13d25beb068bf4
+        sha256: 6a905c82404598db1c633b8930a28bd4e1ce0c5e82a8c011df50dd3a35944813

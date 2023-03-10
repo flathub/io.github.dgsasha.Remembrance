@@ -47,5 +47,5 @@ modules:
       - -Denable-portals=true
     sources:
       - type: archive
-        url: https://github.com/dgsasha/remembrance/archive/refs/tags/v1.2.tar.gz
-        sha256: 05e6468675f6eb5768f92bf90e436ae3fdfdd6ca0feadd10074723ce745e7b63
+        url: https://github.com/dgsasha/remembrance/archive/refs/tags/v1.3.tar.gz
+        sha256: ac028c25991546638535233372d40f20199e0299707ff2b1aa2f1d3a60156a7d

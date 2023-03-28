@@ -52,6 +52,6 @@ modules:
       - -Drelease-type=beta
     sources:
       - type: archive
-        url: https://github.com/dgsasha/remembrance/archive/refs/tags/v2.0.beta1.tar.gz
-        sha256: 92eebe8553d57a6b4dd98046f8b23e33ded70c17f8b3fc13dd1c0bf5b2222993
+        url: https://github.com/dgsasha/remembrance/archive/refs/tags/v2.0.beta2.tar.gz
+        sha256: cc8671bd80f6d3a10fa7512dd2ec3d64b8bde3a7718627dfde3fbed3e77dca88
 

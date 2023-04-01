@@ -1,4 +1,4 @@
-app-id: io.github.dgsasha.Remembrance.Beta
+app-id: io.github.dgsasha.Remembrance
 runtime: org.gnome.Platform
 runtime-version: '44'
 sdk: org.gnome.Sdk
@@ -49,9 +49,8 @@ modules:
     buildsystem: meson
     config-opts:
       - -Denable-portals=true
-      - -Drelease-type=beta
     sources:
       - type: archive
-        url: https://github.com/dgsasha/remembrance/archive/refs/tags/v2.0.beta2.tar.gz
-        sha256: cc8671bd80f6d3a10fa7512dd2ec3d64b8bde3a7718627dfde3fbed3e77dca88
+        url: https://github.com/dgsasha/remembrance/archive/refs/tags/v2.0.beta1.tar.gz
+        sha256: ef864de9e465d2908922f68ecabd6db9738c7bc5b438a59e381511b6ba976a3f
 

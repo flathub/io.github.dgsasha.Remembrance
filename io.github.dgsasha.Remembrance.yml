@@ -1,20 +1,23 @@
 app-id: io.github.dgsasha.Remembrance
 runtime: org.gnome.Platform
-runtime-version: '43'
+runtime-version: '44'
 sdk: org.gnome.Sdk
 command: remembrance
 
 finish-args:
+  - --share=network
   - --share=ipc
   - --device=dri
   - --socket=wayland
   - --socket=fallback-x11
-  - --socket=pulseaudio
   - --system-talk-name=org.freedesktop.login1
+  - --talk-name=org.freedesktop.secrets
+  - --socket=pulseaudio
 
 modules:
   - shared-modules/intltool/intltool-0.51.json
   - shared-modules/libcanberra/libcanberra.json
+  - python3-modules.json
 
   - name: libportal
     buildsystem: meson
@@ -42,10 +45,12 @@ modules:
         sha256: cb518b20eef05ec2e82dda1fa89a292c1760dc023aba91b8aa69bafac85e8a14
 
   - name: remembrance
+    builddir: true
     buildsystem: meson
     config-opts:
       - -Denable-portals=true
     sources:
       - type: archive
-        url: https://github.com/dgsasha/remembrance/archive/refs/tags/v1.5.tar.gz
-        sha256: 5b7165fcb113d4d66aa124aeeb7e5deadb35ede8ae25967888bd96a957ed7ce4
+        url: https://github.com/dgsasha/remembrance/archive/refs/tags/v2.0.tar.gz
+        sha256: e7f8bbdecb72c43b224de14eac33d2d75c0a19f3794c1ef106215922bfc3902f
+

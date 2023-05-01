@@ -13,6 +13,7 @@ finish-args:
   - --system-talk-name=org.freedesktop.login1
   - --talk-name=org.freedesktop.secrets
   - --socket=pulseaudio
+  - --filesystem=xdg-download
 
 modules:
   - shared-modules/intltool/intltool-0.51.json
@@ -51,6 +52,6 @@ modules:
       - -Denable-portals=true
     sources:
       - type: archive
-        url: https://github.com/dgsasha/remembrance/archive/refs/tags/v4.0.tar.gz
-        sha256: 2632d2a481e91a5e0bfa33e8c3be93f002f40323b76e1ab0148add114c316d49
+        url: https://github.com/dgsasha/remembrance/archive/refs/tags/v5.0.beta.tar.gz
+        sha256: dd0c0d122f17448e6ba2dcba5a075291e87f69e1af5ecdc580f5dd0ec4070cfa
 

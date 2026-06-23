@@ -3,7 +3,6 @@ runtime: org.gnome.Platform
 runtime-version: '50'
 sdk: org.gnome.Sdk
 command: remembrance
-
 finish-args:
   - --share=network
   - --share=ipc
@@ -13,7 +12,11 @@ finish-args:
   - --system-talk-name=org.freedesktop.login1
   - --talk-name=org.freedesktop.secrets
   - --socket=pulseaudio
-
+cleanup:
+  - /include
+  - /lib/pkgconfig
+  - /share/gir-1.0
+  - /share/vala
 modules:
   - shared-modules/intltool/intltool-0.51.json
   - shared-modules/libcanberra/libcanberra.json

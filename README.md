@@ -29,7 +29,3 @@ flatpak run flathub io.github.dgsasha.Remembrance
 git clone git@github.com:flathub/io.github.dgsasha.Remembrance.git
 flatpak run org.flatpak.Builder build-dir --user --ccache --force-clean --install io.github.dgsasha.Remembrance.yml
 ```
-
----
-
-**Technologies**: GNOME, GTK4, Libadwaita, Python

@@ -1,6 +1,6 @@
 app-id: io.github.dgsasha.Remembrance
 runtime: org.gnome.Platform
-runtime-version: '48'
+runtime-version: '50'
 sdk: org.gnome.Sdk
 command: remembrance
 
@@ -17,17 +17,16 @@ finish-args:
 modules:
   - shared-modules/intltool/intltool-0.51.json
   - shared-modules/libcanberra/libcanberra.json
-  - python3-modules.json
+  - python3-requirements.yaml
 
   - name: libportal
     buildsystem: meson
     config-opts:
       - -Ddocs=false
-      - -Dbackends=gtk4
     sources:
       - type: archive
-        url: https://github.com/flatpak/libportal/archive/refs/tags/0.6.tar.gz
-        sha256: 8ad326c4f53b7433645dc86d994fef0292bee8adda0fe67db9288ace19250a9c
+        url: https://github.com/flatpak/libportal/releases/download/0.8.0/libportal-0.8.0.tar.xz
+        sha256: ca38cd186e98388e4e92859506c9ecbd01db650ef871838b357b117d147f1541
 
   - name: gsound
     buildsystem: meson
@@ -43,6 +42,7 @@ modules:
       - type: git
         url: https://salsa.debian.org/gnome-team/sound-theme-freedesktop.git
         tag: upstream/0.8
+        commit: 3a91d7a2742e5b591badc3443eab9ea5bd7826e5
 
   - name: remembrance
     builddir: true

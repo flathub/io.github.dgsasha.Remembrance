@@ -1,6 +1,6 @@
 app-id: io.github.dgsasha.Remembrance
 runtime: org.gnome.Platform
-runtime-version: '50'
+runtime-version: '51'
 sdk: org.gnome.Sdk
 command: remembrance
 finish-args:
@@ -16,20 +16,10 @@ cleanup:
   - /include
   - /lib/pkgconfig
   - /share/gir-1.0
-  - /share/vala
 modules:
   - shared-modules/intltool/intltool-0.51.json
   - shared-modules/libcanberra/libcanberra.json
   - python3-requirements.yaml
-
-  - name: libportal
-    buildsystem: meson
-    config-opts:
-      - -Ddocs=false
-    sources:
-      - type: archive
-        url: https://github.com/flatpak/libportal/releases/download/0.8.0/libportal-0.8.0.tar.xz
-        sha256: ca38cd186e98388e4e92859506c9ecbd01db650ef871838b357b117d147f1541
 
   - name: gsound
     buildsystem: meson
